@@ -1,0 +1,72 @@
+config--> userna --> email --> create Repositorie in github --> take clone --> make changes --> add in stage area --> comit --> push.
+
+create branch--> pull --> checkout & join
+
+
+
+comit statment
+git comit -m "any commmants"
+
+
+
+git add commant
+
+1. stage changess in specific files
+	git add filename
+
+2. 
+
+
+
+create branch
+
+-----check branch / check the current branch
+C:\Users\SIHAN\Desktop\My Systems\MySystems>git branch
+* main
+
+--- pull created branches
+C:\Users\SIHAN\Desktop\My Systems\MySystems> git pull
+From https://github.com/MSihan23/MySystems
+ * [new branch]      branch_for_david -> origin/branch_for_david
+Already up to date.
+
+---change to branch and chackout from first
+git checkout branch_for_david
+Switched to a new branch 'branch_for_david'
+branch 'branch_for_david' set up to track 'origin/branch_for_david'.
+
+---again go to main branch (the other brancers majed files not show to the main branch)
+ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+--- if main want to see the othor branchers changed files , the main wan to merge the branches
+
+git merge  branch_for_david
+Updating 65439c9..d8e387f
+Fast-forward
+ fromdavit.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fromdavit.html
+
+---tranfer the changes to other branch
+git push orgin feature-branch(recent branch):feature-branch(to branch)
+
+
+-- display the commit history
+git log
+
+
+--- add note to discribe the commitdata
+	-- attach a notes
+git notes add -m "notes" theNumbers
+
+	--show notes
+git notes show <commit-SHA(number)>
+
+	--List notes
+git notes 📃
+
+	--remove a notes
+git notes remove <commit - SHA  >
+
